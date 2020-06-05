@@ -1,0 +1,64 @@
+# list
+
+#function
+a = []
+b = list()
+print(a==b)
+print(list((1,2,3)))
+print(list("Python"))
+print(list(['C','C++','Ruby','Perl']))
+
+#operator
+
+n1 = [1,2,3,4,5,6]
+n2 = [8,7,6,5,4,32]
+print(n1+n2)
+print(n1*2)
+
+# adding
+
+langs = []
+
+langs.append("Python")
+langs.append("Perl")
+print(langs)
+
+langs.insert(0, "PHP")
+langs.insert(2, "Lua")
+print(langs)
+
+langs.extend(("JavaScript", "ActionScript"))
+print(langs)
+
+# Tuple
+# Accessing element from a tuple
+
+
+tup1 = ('physics', 'chemistry', 1997, 2000);
+tup2 = (1, 2, 3, 4, 5 );
+tup3 = "a", "b", "c", "d";
+
+tup1[0]
+tup2[1:5]
+tup3[ :-1]
+tup4 = tup1 + tup3
+
+# Dictionary
+# Deleting an element from list
+
+word = {
+        "Hello": 56,
+        "at" : 23 ,
+        "test" : 43,
+        "this" : 43
+        }
+    
+print("Original Dictionary :" , word)
+del word["at"]
+print("Updated Dictionary: " , word)
+
+result = word.pop("this", None)    
+    
+print("Deleted item's value = ", result)
+print("Updated Dictionary :" , word)  
+
